@@ -8,6 +8,13 @@ Transition::Transition()
 	NextState = 0;
 }
 
+Transition::Transition(int InCurrenState, string InCondition, int InNextState)
+{
+	InCurrenState = CurrentState;
+	InCondition =  Condition;
+	InNextState = NextState;
+}
+
 Transition::~Transition()
 {
 
